@@ -1,0 +1,25 @@
+[project]
+name = "mit-6.S184"
+version = "0.1.0"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "celluloid>=0.2.0",
+    "jupyterlab>=4.1.6",
+    "matplotlib>=3.10.5",
+    "numpy>=2.1.2",
+    "scikit-learn>=1.7.1",
+    "seaborn>=0.13.2",
+    "torch>=2.8.0",
+    "torchvision>=0.23.0",
+    "tqdm>=4.66.5",
+]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cpu" }]
+torchvision = [{ index = "pytorch-cpu" }]
