@@ -16,5 +16,6 @@ I use `torch` with CPU support because my AMD GPU is not compatible with ROCm ðŸ
 
 ```bash
 nix-shell
+uv sync # to create virtual env and install packages the first time
 source .venv/bin/activate
 ```
