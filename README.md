@@ -13,3 +13,8 @@ There is a `shell.nix` to
 
 For Python packages, use `uv`.
 I use `torch` with CPU support because my AMD GPU is not compatible with ROCm 🥲.
+
+```bash
+nix-shell
+source .venv/bin/activate
+```
